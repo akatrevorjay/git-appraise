@@ -21,11 +21,11 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/google/git-appraise/commands/input"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
-	"github.com/google/git-appraise/review/comment"
-	"github.com/google/git-appraise/review/request"
+	"github.com/akatrevorjay/git-appraise/commands/input"
+	"github.com/akatrevorjay/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/review"
+	"github.com/akatrevorjay/git-appraise/review/comment"
+	"github.com/akatrevorjay/git-appraise/review/request"
 )
 
 var abandonFlagSet = flag.NewFlagSet("abandon", flag.ExitOnError)

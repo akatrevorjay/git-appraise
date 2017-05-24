@@ -17,7 +17,7 @@ limitations under the License.
 package ci
 
 import (
-	"github.com/google/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/repository"
 	"testing"
 )
 

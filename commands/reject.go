@@ -21,10 +21,10 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/google/git-appraise/commands/input"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review"
-	"github.com/google/git-appraise/review/comment"
+	"github.com/akatrevorjay/git-appraise/commands/input"
+	"github.com/akatrevorjay/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/review"
+	"github.com/akatrevorjay/git-appraise/review/comment"
 )
 
 var rejectFlagSet = flag.NewFlagSet("reject", flag.ExitOnError)

@@ -19,7 +19,7 @@ package analyses
 
 import (
 	"encoding/json"
-	"github.com/google/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/repository"
 	"io/ioutil"
 	"net/http"
 	"sort"

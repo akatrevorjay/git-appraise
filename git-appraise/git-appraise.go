@@ -18,7 +18,7 @@ limitations under the License.
 //
 // To install, run:
 //
-//    $ go get github.com/google/git-appraise/git-appraise
+//    $ go get github.com/akatrevorjay/git-appraise/git-appraise
 //
 // And for usage information, run:
 //
@@ -27,8 +27,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/google/git-appraise/commands"
-	"github.com/google/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/commands"
+	"github.com/akatrevorjay/git-appraise/repository"
 	"os"
 	"sort"
 	"strings"

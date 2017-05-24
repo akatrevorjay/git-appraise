@@ -18,7 +18,7 @@ package analyses
 
 import (
 	"fmt"
-	"github.com/google/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/repository"
 	"net/http"
 	"net/http/httptest"
 	"testing"

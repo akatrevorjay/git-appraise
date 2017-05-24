@@ -21,11 +21,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/google/git-appraise/repository"
-	"github.com/google/git-appraise/review/analyses"
-	"github.com/google/git-appraise/review/ci"
-	"github.com/google/git-appraise/review/comment"
-	"github.com/google/git-appraise/review/request"
+	"github.com/akatrevorjay/git-appraise/repository"
+	"github.com/akatrevorjay/git-appraise/review/analyses"
+	"github.com/akatrevorjay/git-appraise/review/ci"
+	"github.com/akatrevorjay/git-appraise/review/comment"
+	"github.com/akatrevorjay/git-appraise/review/request"
 	"sort"
 )
 
