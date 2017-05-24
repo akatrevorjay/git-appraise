@@ -1,13 +1,2 @@
 package: github.com/akatrevorjay/git-appraise
-import:
-- package: github.com/akatrevorjay/git-appraise
-  subpackages:
-  - commands
-  - commands/input
-  - commands/output
-  - repository
-  - review
-  - review/analyses
-  - review/ci
-  - review/comment
-  - review/request
+import: []

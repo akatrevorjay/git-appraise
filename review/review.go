@@ -26,6 +26,7 @@ import (
 	"github.com/akatrevorjay/git-appraise/review/ci"
 	"github.com/akatrevorjay/git-appraise/review/comment"
 	"github.com/akatrevorjay/git-appraise/review/request"
+	"github.com/akatrevorjay/git-appraise/utils"
 	"sort"
 )
 
@@ -234,15 +235,30 @@ func getSummaryFromNotes(repo repository.Repo, revision string, requestNotes, co
 // GetSummary returns the summary of the specified code review.
 //
 // If no review request exists, the returned review summary is nil.
-func GetSummary(repo repository.Repo, revision string) (*Summary, error) {
-	requestNotes := repo.GetNotes(request.Ref, revision)
-	commentNotes := repo.GetNotes(comment.Ref, revision)
-	summary, err := getSummaryFromNotes(repo, revision, requestNotes, commentNotes)
+func GetSummary(repo repository.Repo, revision string) (summary *Summary, err error) {
+	//utils.Dump(repo)
+	//utils.Dump(revision)
+
+	var requestNotes, commentNotes []repository.Note
+	requestNotes = repo.GetNotes(request.Ref, revision)
+	commentNotes = repo.GetNotes(comment.Ref, revision)
+
+	//utils.Dump(requestNotes)
+	//utils.Dump(commentNotes)
+
+	summary, err = getSummaryFromNotes(repo, revision, requestNotes, commentNotes)
 	if err != nil {
 		return nil, err
 	}
 	currentCommit := revision
-	if summary.Request.Alias != "" {
+
+	if summary == nil {
+		return summary, nil
+	}
+
+	utils.Dump(summary)
+
+	if summary != nil && summary.Request.Alias != "" {
 		currentCommit = summary.Request.Alias
 	}
 
