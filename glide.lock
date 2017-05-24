@@ -1,0 +1,16 @@
+hash: be18d33a8fe700f0a745632d259b0c939b9710ce6cd234639eafe6b4d6cc3693
+updated: 2017-05-23T22:08:32.747475925-07:00
+imports:
+- name: github.com/akatrevorjay/git-appraise
+  version: bcf5cfe2d8d4739ba172a20a6e81328011235638
+  subpackages:
+  - commands
+  - commands/input
+  - commands/output
+  - repository
+  - review
+  - review/analyses
+  - review/ci
+  - review/comment
+  - review/request
+testImports: []
