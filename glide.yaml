@@ -1,4 +1,4 @@
-package: github.com/google/git-appraise
+package: github.com/akatrevorjay/git-appraise
 import:
 - package: github.com/akatrevorjay/git-appraise
   subpackages:
